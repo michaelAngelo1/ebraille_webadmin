@@ -282,7 +282,7 @@ export function FormAdd() {
 
           {/* EPUB UPLOAD  */}
           <label className="text-white text-sm xl:text-base ">ePub File</label>
-          <input type="file" id="file" {...register("bookFile", { required: true })} className="text-white" />
+          <input type="file" id="file"  className="text-orange-300" />
 
           {errors.bookFile && <p className="absolute text-red-600 top-[2px] right-8">{("*" + errors.bookFile?.type) as string}</p>}
           {errors.bookFile && <p className="absolute text-red-600 top-10 right-8">{("*" + errors.bookFile?.type) as string}</p>}
